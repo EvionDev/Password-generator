@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="./dist/output.css" />
+    <script src="./dist/main.js" defer></script>
+    <script src="https://cdn.lordicon.com/qjzruarw.js" defer></script>
+  </head>
+  <body class="bg-violet-700 w-full h-screen flex justify-center items-center">
+    <main class="relative max-w-xs w-full bg-white rounded-lg py-7 px-8">
+      <div id="password-generated" class="h-14 relative">
+        <input
+          class="w-full h-full rounded-lg border-2 border-violet-700 pl-4 pr-10"
+          type="text"
+          placeholder="Your generated password"
+          disabled
+        />
+        <lord-icon
+          class="cursor-pointer absolute right-0"
+          src="https://cdn.lordicon.com/nocovwne.json"
+          trigger="hover"
+          colors="primary:#121331,secondary:#6d28d9"
+          stroke="60"
+          style="width: 50px; height: 50px"
+        >
+        </lord-icon>
+      </div>
+      <div id="range" class="flex items-center my-5 justify-between">
+        <input class="range" type="range" min="6" max="16" value="8" />
+        <span id="range-number">8</span>
+      </div>
+      <button
+        id="generate-btn"
+        class="h-12 bg-violet-700 px-2 py-1 outline-none text-white rounded-md w-full hover:bg-white hover:text-violet-700 border-2 border-violet-700 transition ease duration-200 flex items-center justify-center"
+      >
+        Generate password
+      </button>
+    </main>
+  </body>
+</html>
