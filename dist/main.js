@@ -18,6 +18,5 @@ const generatepassword = () => {
 
 range.addEventListener("input", () => {
   range_num.innerText = range.value;
-  generatepassword();
 });
 generate_btn.addEventListener("click", generatepassword);
